@@ -13,4 +13,4 @@ This is the second project of the Web Development program at Practicum by Yandex
 
 ## Plan on improving the project
 
-Add your ideas here :)
+My plans on improving the project would be to make the "Book a table" button square. I would also like to remove the up and down arrow from the "Number of guests" input field as well.
