@@ -220,16 +220,15 @@
               />
             </fieldset>
             <fieldset class="form__fieldset">
-              <label for="number-of-guests" class="form__label"></label>
-                Number of guests *
-              </p>
+              <label for="number" class="form__label">Number of guests *</label>
               <input
                 type="number"
                 class="form__input"
-                id="number-of-guests"
-                name="number-of-guests"
+                id="number"
+                name="number"
                 placeholder="1-8"
-                min="1" max="8"
+                min="1"
+                max="8"
                 required
               />
             </fieldset>
@@ -256,18 +255,15 @@
               />
             </fieldset>
             <button type="submit" class="form__button">Book a table</button>
-            <input
-              type="checkbox"
-              class="form__input form__input-checkbox"
-              name="terms"
-              id="terms"
-              required
-            />
-            <label
-              for="terms"
-              class="form__label"
-              
-              >I agree with the terms of use</label
+            <label for="terms" class="form__label">
+              <input
+                type="checkbox"
+                class="form__input form__input-checkbox"
+                name="terms"
+                id="terms"
+                required
+              />
+              I agree with the terms of use</label
             >
           </form>
         </section>
