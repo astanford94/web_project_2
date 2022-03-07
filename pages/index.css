@@ -1,4 +1,5 @@
 @import url(../vendor/normalize.css);
+
 @keyframes pulse {
   0% {
     opacity: 0;
@@ -176,9 +177,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  min-height: 900px;
-  max-height: 980px;
+
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 100px;
@@ -273,9 +272,6 @@
   background-image: url(../images/background_recipes.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  min-height: 900px;
-  max-height: 980px;
   padding-top: 30px;
   padding-left: 80px;
   padding-right: 80px;
@@ -345,9 +341,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  min-height: 900px;
-  max-height: 980px;
+
   padding-top: 30px;
   padding-left: 80px;
   padding-right: 80px;
@@ -377,12 +371,18 @@
 .form__fieldset {
   border: none;
   margin-bottom: 32px;
-  align-items: center;
+  align-items: ;
 }
 
 .form__label {
   display: block;
   justify-content: ;
+}
+
+.form__label[for="name"] {
+  display: ;
+  margin-left: 12px;
+  vertical-align: ;
 }
 
 .form__input {
@@ -413,6 +413,7 @@
   font-size: 18px;
   border: none;
   align-items: center;
+  margin-top: ;
   margin-bottom: 32px;
   display: ;
 }
@@ -424,6 +425,9 @@
 .form__input-checkbox {
   border-radius: 2px;
   padding-bottom: 100px;
+  margin-right: ;
+  width: 20px;
+  height: 20px;
   display: ;
 }
 
@@ -482,6 +486,7 @@
 .about__circle_animation_blurred {
   animation: pulse 1.3s ease-in-out infinite;
   z-index: 1;
+  width: 430px;
 }
 
 .footer {
@@ -550,7 +555,7 @@
 
 .footer__copyrights {
   margin-top: 108px;
-  margin-bottom: 60px;
+  margin-bottom: ;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;

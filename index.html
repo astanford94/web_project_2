@@ -216,30 +216,32 @@
                 id="name"
                 name="name"
                 placeholder="Name Surname"
+                required
               />
             </fieldset>
             <fieldset class="form__fieldset">
-              <label for="number-of-guests" class="form__label"
-                >Number of guests *</label
-              >
+              <label for="number-of-guests" class="form__label"></label>
+                Number of guests *
+              </p>
               <input
                 type="number"
                 class="form__input"
                 id="number-of-guests"
                 name="number-of-guests"
                 placeholder="1-8"
+                min="1" max="8"
+                required
               />
             </fieldset>
             <fieldset class="form__fieldset">
-              <label for="date-and-time" class="form__label"
-                >Date & time *</label
-              >
+              <label for="date" class="form__label">Date & time *</label>
               <input
                 type="date"
                 class="form__input"
                 id="date"
                 name="date"
                 placeholder="dd.mm.yyyy"
+                required
               />
             </fieldset>
             <fieldset class="form__fieldset">
@@ -250,19 +252,21 @@
                 id="email"
                 name="email"
                 placeholder="email@email.com"
+                required
               />
             </fieldset>
             <button type="submit" class="form__button">Book a table</button>
             <input
               type="checkbox"
               class="form__input form__input-checkbox"
-              name="i-agree-with-the-terms-of-use"
-              id="i-agree-with-the-terms-of-use"
+              name="terms"
+              id="terms"
+              required
             />
             <label
-              for="i-agree-with-the-terms-of-use"
+              for="terms"
               class="form__label"
-              id="i-agree-with-the-terms-of-use"
+              
               >I agree with the terms of use</label
             >
           </form>
@@ -286,7 +290,7 @@
             </p>
           </div>
           <div class="about__circle"></div>
-          <div class="about__circle_animation_blurred"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
       <footer id="footer" class="footer">
