@@ -409,6 +409,14 @@
   min-height: 60px;
 }
 
+.form__button {
+  border-radius: 4px;
+  max-width: 385px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  border: none;
+}
+
 .form__button[type="submit"] {
   border-radius: 4px;
   opacity: 100%;
