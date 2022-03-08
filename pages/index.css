@@ -132,42 +132,39 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  color: #838383;
 }
 
-.header__footer_column {
+.header__column {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #838383;
-}
-
-.header__footer_column-hours {
   margin-left: 80px;
   margin-bottom: 40px;
 }
 
-.header__footer_column-heading {
+.header__footer-heading {
   padding: 0;
   margin: 0;
 }
 
-.header__footer_list {
+.header__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.header__footer_list-item {
+.header__list-item {
 }
 
 .header__footer_column-address {
-  margin-right: 80px;
-  margin-bottom: 40px;
 }
 
 .header__footer-address {
+  margin-right: 80px;
+  margin-bottom: -40px;
 }
 
 .menu {
