@@ -19,7 +19,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -49,6 +49,7 @@
 .logo {
   margin-top: 30px;
   margin-left: -30px;
+  /* the brief says to use 30px */
   margin-bottom: 80px;
 }
 
@@ -58,7 +59,7 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -75,37 +76,39 @@
 }
 
 .header__title {
-  top: 202px;
-  left: 80px;
+  padding: 202px 0 auto 80px;
+  margin: 0 0;
 }
 
 .header__span-accent {
-  font-family: "Noto Serif", "Times New Roman";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
   line-height: 72px;
   color: #2f80ed;
+  display: block;
 }
 
 .header__span {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
-  margin-top: 0;
+  margin: 0 0;
+  display: block;
 }
 
 .header__description {
-  top: 28px;
-  left: -80px;
-  font-family: "Noto Serif", "Times New Roman";
+  padding: 28px 0 0 -80px;
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   max-width: 670px;
+  margin: 28px 0;
 }
 
 .header__image {
@@ -119,15 +122,16 @@
 .header__footer {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   position: absolute;
   bottom: 40px;
   width: 100%;
   padding: auto;
-  margin-bottom: -40px;
-  margin-left: -80px;
+  right: 80px;
+  bottom: 40px;
+  left: 80px;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -136,18 +140,19 @@
 }
 
 .header__column {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin-left: 80px;
+  margin-right: 80px;
   margin-bottom: 40px;
 }
 
-.header__footer-heading {
+.header__paragraph-heading {
   padding: 0;
   margin: 0;
+  font-weight: 500;
 }
 
 .header__list {
@@ -156,12 +161,9 @@
   margin: 0;
 }
 
-.header__list-item {
-}
-
-.header__footer-address {
-  margin-right: 80px;
-  margin-bottom: -40px;
+.header__paragraph-address {
+  margin-right: 150px;
+  margin-bottom: 40px;
 }
 
 .menu {
@@ -182,7 +184,7 @@
   max-width: 780px;
   text-align: center;
   margin: auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -194,7 +196,7 @@
   max-width: 780px;
   margin: auto;
   text-align: center;
-  font-family: "Noto Serif", "Times New Roman";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -210,18 +212,15 @@
   gap: 100px;
 }
 
-.menu__cards:last-of-type {
-  margin-bottom: 0px;
-}
-
 .card {
   max-width: 600px;
   width: 45%;
 }
 
 .card__title {
+  margin-top: 0;
   margin-bottom: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -235,7 +234,7 @@
 }
 
 .card__list-item {
-  font-family: "Noto Serif", "Times New Roman";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   display: flex;
@@ -243,6 +242,10 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 16px;
+}
+
+.card__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .card__list-divider {
@@ -265,9 +268,6 @@
   background-image: url(../images/background_recipes.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
   position: relative;
   box-sizing: border-box;
 }
@@ -276,7 +276,7 @@
   max-width: 580px;
   margin-top: 100px;
   margin-left: 80px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -288,7 +288,7 @@
   margin-top: 24px;
   margin-left: 80px;
   margin-bottom: 80px;
-  font-family: "Noto Serif", "Times New Roman";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -300,7 +300,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  padding-bottom: 215px;
+  padding: 0 0 215px 0;
 }
 
 .recipes__video-item {
@@ -310,6 +310,7 @@
 .recipes__iframe {
   width: 480px;
   height: 273px;
+  border: 0;
 }
 
 .recipes__video-caption {
@@ -317,15 +318,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-}
-
-.iframe {
-  border: none;
+  margin: 24px 0;
 }
 
 .reservation {
@@ -334,9 +332,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
   position: relative;
 }
 
@@ -344,7 +339,7 @@
   max-width: 780px;
   text-align: center;
   margin: auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -362,44 +357,28 @@
 .form__fieldset {
   border: none;
   margin-bottom: 32px;
+  padding: 0;
+  flex-direction: column;
 }
 
 .form__label {
   display: block;
-}
-
-.form__label[for="name"] {
-  margin-left: -330px;
-}
-
-.form__label[for="number"] {
-  margin-left: -240px;
-  margin-top: -32px;
-}
-
-.form__label[for="date"] {
-  margin-left: -290px;
-  margin-top: -32px;
-}
-
-.form__label[for="email"] {
-  margin-left: -300px;
-  margin-top: -32px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__input {
   border-radius: 4px;
   max-width: 385px;
+  min-width: 385px;
+  max-height: 60px;
+  min-height: 60px;
   margin-top: 8px;
   margin-bottom: 32px;
   border: none;
-}
-
-.form__input[type="text"],
-.form__input[type="number"],
-.form__input[type="email"] {
-  min-width: 385px;
-  min-height: 60px;
 }
 
 .form__button {
@@ -428,7 +407,7 @@
   opacity: 70%;
 }
 
-.form__input-checkbox {
+.form__input_type_checkbox {
   border-radius: 2px;
   margin-bottom: 120px;
   margin-right: 12px;
@@ -438,22 +417,23 @@
 
 .about {
   background-color: #0a2750;
-  padding: 100px 80px;
   color: #fff;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
   height: 522px;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about__title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
-  position: absolute;
+  position: relative;
   margin: 0;
-  padding: -100px 0 0 80px;
+  padding: 100px 0 0 80px;
   max-width: 300px;
   font-size: 44px;
   line-height: 52px;
@@ -461,12 +441,14 @@
 }
 
 .about__content {
-  position: absolute;
-  top: 119px;
-  right: 80px;
-  padding-bottom: 173px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 119px;
+  margin-right: 80px;
+  margin-bottom: 173px;
+  margin-left: 0;
   max-width: 650px;
-  font-family: "Noto Serif", "Times New Roman";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -475,6 +457,10 @@
 
 .about__paragraph {
   margin: 0 0 32px 0;
+}
+
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -496,16 +482,13 @@
 
 .footer {
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
-  padding: 60px 100px 108px 80px;
   color: #fff;
 }
 
 .footer__content {
   display: flex;
   justify-content: space-between;
-}
-
-.footer__column {
+  padding: 60px 100px 108px 80px;
 }
 
 .footer__logo {
@@ -513,15 +496,14 @@
   height: 32px;
 }
 
-.footer__column_footer__column_social {
-}
-
 .footer__social-heading {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .footer__list {
@@ -531,7 +513,8 @@
 }
 
 .footer__list-item {
-  margin: 0 0 30px 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .footer__social-link {
@@ -549,7 +532,7 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -558,9 +541,9 @@
 }
 
 .footer__copyrights {
-  margin-top: 108px;
-  margin-bottom: -60px;
-  font-family: "Inter", sans-serif;
+  padding-bottom: 60px;
+  margin-left: 80px;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
