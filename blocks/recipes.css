@@ -36,6 +36,8 @@
   justify-content: center;
   gap: 40px;
   padding: 0 0 215px 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .recipes__video-item {
@@ -58,5 +60,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  margin: 24px 0;
+  margin-top: 24px;
+  margin-bottom: 0;
 }

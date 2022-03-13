@@ -1,12 +1,10 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-start;
 }
 
-.nav-links {
-  margin-top: 30px;
-  margin-right: 80px;
+.nav__links {
   display: flex;
   align-items: center;
   column-gap: 20px;
