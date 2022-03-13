@@ -36,7 +36,7 @@
 }
 
 .footer__list-item:last-child {
-  margin: 0 0;
+  margin-bottom: 0;
 }
 
 .footer__social-link {
