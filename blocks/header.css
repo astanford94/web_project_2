@@ -23,6 +23,7 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
+  position: relative;
 }
 
 .header__span-accent {
